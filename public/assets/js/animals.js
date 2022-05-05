@@ -36,7 +36,6 @@ const getAnimals = (formData = {}) => {
       if (!response.ok) {
         return alert('Error: ' + response.statusText);
       }
-
       return response.json();
     })
     .then(animalData => {
